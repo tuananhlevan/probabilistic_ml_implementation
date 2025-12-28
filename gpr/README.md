@@ -24,9 +24,11 @@ $$
 
 * **Kernel:** Radial Basis Function (RBF) / Squared Exponential Kernel.
 * **Equation:**
+  
 $$
 k(x, x') = \sigma_f^2 \exp\left( -\frac{1}{2l^2} (x - x')^2 \right)
 $$
+
 * **Inference:** Computes the posterior using Cholesky decomposition for numerical stability.
 * **Hyperparameters:** Length-scale $l$ and signal variance $\sigma_f$ are tunable.
 
