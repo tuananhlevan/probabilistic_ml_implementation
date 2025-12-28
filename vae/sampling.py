@@ -19,3 +19,4 @@ def sampling(model, device, grid=4):
             plt.axis('off')
         plt.suptitle("Randomly Generated Images (from z ~ N(0,1))")
         plt.show()
+        # plt.savefig("samples", dpi=600)
