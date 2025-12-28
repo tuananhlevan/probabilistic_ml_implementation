@@ -17,7 +17,7 @@ $$
 $$
 
 $$
-\Sigma_* = k(x_*, x_*) - K_*^T (K + \sigma_n^2 I)^{-1} K_*
+\Sigma_{*} = k(x_{*}, x_{*}) - K_{*}^T (K + \sigma_n^2 I)^{-1} K_{*}
 $$
 
 ## Implementation Details
