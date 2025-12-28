@@ -12,6 +12,8 @@ def sample_2d_data(model, sigma_levels, n_samples=1000, n_steps_each=100, step_l
     # Start with random noise scaled by the largest sigma
     x = torch.randn(n_samples, 2, device=device) * sigma_levels[0]
     
+    history = [x.cpu().detach().numpy().copy()]
+    
     # Iterate through noise levels
     for i, sigma in enumerate(sigma_levels):
         
@@ -36,4 +38,7 @@ def sample_2d_data(model, sigma_levels, n_samples=1000, n_steps_each=100, step_l
             
             x = x + score_term + noise_term
             
-    return x.cpu().numpy()
+            if (s % 100 == 0):
+                history.append(x.cpu().detach().numpy().copy())
+            
+    return x.cpu().numpy(), history

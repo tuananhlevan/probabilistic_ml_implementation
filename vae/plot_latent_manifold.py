@@ -19,8 +19,9 @@ def plot_latent_manifold(model, device, n=20, digit_size=28):
                 figure[i * digit_size: (i + 1) * digit_size,
                        j * digit_size: (j + 1) * digit_size] = digit
 
-    plt.figure(figsize=(10, 10))
+    plt.figure(figsize=(8, 8))
     plt.imshow(figure.cpu(), cmap='Greys_r')
     plt.axis('off')
     plt.title("Latent Space Manifold")
     plt.show()
+    # plt.savefig("Latent Space Manifold", dpi=600)
