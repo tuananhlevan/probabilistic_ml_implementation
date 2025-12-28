@@ -10,13 +10,13 @@ $$f(x) \sim \mathcal{GP}(m(x), k(x, x'))$$
 
 For a dataset $\mathcal{D} = \{(x_i, y_i)\}$, the posterior distribution for a new test point $x_*$ is Gaussian with mean and variance derived from the kernel matrix $K$:
 
-$$\mu_* = K_*^T (K + \sigma_n^2 I)^{-1} y$$
-$$\Sigma_* = k(x_*, x_*) - K_*^T (K + \sigma_n^2 I)^{-1} K_*$$
+$$\mu_{*} = K_{*}^{T} (K + \sigma_n^2 I)^{-1} y$$
+$$\Sigma_{*} = k(x_{*}, x_{*}) - K_{*}^T (K + \sigma_{n^2} I)^{-1} K_{*}$$
 
 ## Implementation Details
 
 * **Kernel:** Radial Basis Function (RBF) / Squared Exponential Kernel.
-    * $k(x, x') = \sigma_f^2 \exp\left( -\frac{1}{2l^2} (x - x')^2 \right)$
+    * $k(x, x') = \sigma_{f}^2 \exp\left( -\frac{1}{2l^2} (x - x')^2 \right)$
 * **Inference:** Computes the posterior using Cholesky decomposition for numerical stability.
 * **Hyperparameters:** Length-scale $l$ and signal variance $\sigma_f$ are tunable.
 

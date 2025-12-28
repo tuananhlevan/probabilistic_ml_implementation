@@ -2,17 +2,6 @@
 
 Reproduce VAE from the paper titled [Auto-Encoding Variational Bayes (ICLR 2014)](https://openreview.net/forum?id=33X9fd2-9FyZd)
 
-Here are the professional, research-grade README.md files for your VAE and GPR folders.
-
-I have included the standard mathematical definitions (ELBO and Kernel functions) in LaTeX. When these render on GitHub, they will look exactly like a paper abstract.
-
-1. vae/README.md
-Markdown
-
-# Variational Autoencoder (VAE)
-
-A PyTorch implementation of the Variational Autoencoder (Kingma & Welling, 2013) on the MNIST dataset. This project investigates the properties of the learned latent manifold and the trade-off between reconstruction fidelity and latent space regularization.
-
 ## Theoretical Background
 
 The VAE is a probabilistic generative model that learns a distribution $p(x)$ by introducing a latent variable $z$. The model maximizes the **Evidence Lower Bound (ELBO)**:

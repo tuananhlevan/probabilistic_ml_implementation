@@ -8,8 +8,6 @@ We minimize the **Fisher Divergence** using the Denoising Score Matching objecti
 
 $$\mathcal{L}(\theta) = \mathbb{E}_{x, \tilde{x}} \left[ || s_\theta(\tilde{x}) - \nabla_{\tilde{x}} \log p(\tilde{x}|x) ||_2^2 \right]$$
 
-*(Note: Adding LaTeX math here makes you look incredibly professional.)*
-
 ## Results
 ### Langevin Dynamics Sampling
 The following animation shows the sampling process using **Annealed Langevin Dynamics**. The particles (blue) start as random noise and follow the learned vector field to the high-density regions of the data distribution.
@@ -20,7 +18,7 @@ The following animation shows the sampling process using **Annealed Langevin Dyn
 Comparison of the ground truth Mixture of Gaussians (left) vs. the learned distribution (right).
 ![Comparison](./assets/comparison.png)
 
-## 🚀 Usage
+## Usage
 ```bash
 python main.py
 ```
