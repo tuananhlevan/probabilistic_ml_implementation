@@ -17,8 +17,3 @@ The following animation shows the sampling process using **Annealed Langevin Dyn
 ### Mode Coverage
 Comparison of the ground truth Mixture of Gaussians (left) vs. the learned distribution (right).
 ![Comparison](./assets/comparison.png)
-
-## Usage
-```bash
-python main.py
-```
